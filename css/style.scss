@@ -43,4 +43,13 @@ body {
     height: 500px;
     background-color: var(--Dark_desaturated_blue_card_background);
     border-radius: 12px;
+    h1 {
+        color: var(--White_main_heading_stats);
+    }
+    h2 {
+        @extend h1;
+    }
+    p {
+        color: var(--Slightly_transparent_white_main_paragraph);
+    }
 }

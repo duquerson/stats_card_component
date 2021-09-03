@@ -49,3 +49,9 @@ body {
   background-color: var(--Dark_desaturated_blue_card_background);
   border-radius: 12px;
 }
+.container h1, .container h2 {
+  color: var(--White_main_heading_stats);
+}
+.container p {
+  color: var(--Slightly_transparent_white_main_paragraph);
+}
