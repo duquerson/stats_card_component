@@ -55,3 +55,6 @@ body {
 .container p {
   color: var(--Slightly_transparent_white_main_paragraph);
 }
+.container span {
+  color: var(--Soft_violet_accent);
+}

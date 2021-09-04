@@ -15,10 +15,12 @@
     --White_main_heading_stats: hsl(0, 0%, 100%);
     --Slightly_transparent_white_main_paragraph: hsla(0, 0%, 100%, 0.75);
     --Slightly_transparent_white_stat_headings: hsla(0, 0%, 100%, 0.6);
+    --fuente_titulos: 'Inter', sans-serif;
+    --fuente_parrafos: 'Lexend Deca', sans-serif;
 }
 
 html {
-    /*ajuste para uso del rem 1 rem = 16px para tamaño de fuente y fuente */
+    /*ajuste para uso del rem 1 rem = 10px para tamaño de fuente y fuente */
     box-sizing: border-box;
     font-size: 62.5%;
     font-family: 'Inter', sans-serif;
@@ -51,5 +53,16 @@ body {
     }
     p {
         color: var(--Slightly_transparent_white_main_paragraph);
+    }
+    span {
+        color: var(--Soft_violet_accent);
+    }
+}
+
+.attribution {
+    font-size: 1.1rem;
+    text-align: center;
+    a {
+        color: hsl(228, 45%, 44%);
     }
 }
