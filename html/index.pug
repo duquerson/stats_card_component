@@ -2,8 +2,8 @@ doctype html
 html(lang='es')
     include ./components_pug/head.pug
     body
-        div.container
-            section.container__info
+        section.container
+            div.container__info
                 div.container__info--titulos
                     h1
                         | Get
@@ -13,19 +13,23 @@ html(lang='es')
                         | that help your business grow.
                     p Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency    
                 div.container__info--sub
-                    div
+                    div.cajas
                         h2 10k+
                         p COMPANIES
-                    div
+                    div.cajas
                         h2 314
                         p TEMPLATES
-                    div
+                    div.cajas
                         h2 12M+
                         p QUERIES
-            section.container__img
-                image
-                    span
-        div.attribution
+            div.container__img
+                div.img__color
+        section.attribution
             | challenge by 
             a(href="https://www.frontendmentor.io?ref=challenge" target="_blank") Frontend Mentor
-            a(href="#") Yeferson  Soto.
+            | .
+            |    
+            |   
+            | Coded by
+            |    
+            a(href="https://github.com/duquerson") Yeferson  Soto.
