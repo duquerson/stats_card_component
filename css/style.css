@@ -19,17 +19,22 @@
   --fuente_parrafos: "Lexend Deca", sans-serif;
 }
 
-html {
-  /*ajuste para uso del rem 1 rem = 10px para tamaño de fuente y fuente */
+body {
+  /*ajuste para uso del rem 1 rem = 10px para tamaño de fuente*/
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 62.5%;
-  /*font-family: 'Inter', sans-serif;*/
-  /*font-family: 'Lexend Deca', sans-serif;*/
 }
 
-body {
-  /*tamaño y color de fondo y pocicionamiento de caja*/
+/*
+1. pocicionamiento
+2. modelo de caja
+3.tipografia
+4.visuales
+5.misalaneos o otros.
+*/
+.contenedor_principal {
+  /*tamaño y color de fondo y pocicionamiento de card*/
   width: 100vw;
   height: 100vh;
   padding: 0;
@@ -42,6 +47,7 @@ body {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(253px, 698px));
   background-color: var(--Very_dark_blue_main_background);
 }
 

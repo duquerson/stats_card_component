@@ -6,29 +6,9 @@
 5.misalaneos o otros.
 */
 
-:root {
-    /* Colores base */
-    --Very_dark_blue_main_background: hsl(233, 47%, 7%);
-    --Dark_desaturated_blue_card_background: hsl(244, 38%, 16%);
-    --Soft_violet_accent: hsl(277, 64%, 61%);
-    /*colores_neutrox*/
-    --White_main_heading_stats: hsl(0, 0%, 100%);
-    --Slightly_transparent_white_main_paragraph: hsla(0, 0%, 100%, 0.75);
-    --Slightly_transparent_white_stat_headings: hsla(0, 0%, 100%, 0.6);
-    --fuente_titulos: 'Inter', sans-serif;
-    --fuente_parrafos: 'Lexend Deca', sans-serif;
-}
-
-html {
-    /*ajuste para uso del rem 1 rem = 10px para tamaño de fuente y fuente */
-    box-sizing: border-box;
-    font-size: 62.5%;
-    /*font-family: 'Inter', sans-serif;*/
-    /*font-family: 'Lexend Deca', sans-serif;*/
-}
-
-body {
-    /*tamaño y color de fondo y pocicionamiento de caja*/
+@use './general.scss';
+.contenedor_principal {
+    /*tamaño y color de fondo y pocicionamiento de card*/
     width: 100vw;
     height: 100vh;
     padding: 0;
@@ -37,6 +17,7 @@ body {
     display: grid;
     justify-content: center;
     align-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(253px, 698px));
     background-color: var(--Very_dark_blue_main_background);
 }
 
