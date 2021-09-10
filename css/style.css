@@ -21,11 +21,18 @@
 
 html {
   /*ajuste para uso del rem 1 rem = 10px para tamaño de fuente*/
+  font-size: 62.5%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 62.5%;
-  padding: 0;
   margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
 }
 
 /*
@@ -63,26 +70,24 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
   background-color: var(--Dark_desaturated_blue_card_background);
 }
 .contenedor .contenedor__card .card__contenido {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
+  margin-top: 26px;
 }
 .contenedor .contenedor__card .card__contenido .card__principal {
   /*textos, color y fuente*/
 }
 .contenedor .contenedor__card .card__contenido .card__principal h1 {
-  font-size: 1.3rem;
+  font-size: 2.1rem;
   font-weight: 700;
   text-align: center;
+  margin-left: 12px;
+  margin-right: 12px;
   font-family: var(--fuente_titulos);
   color: var(--White_main_heading_stats);
 }
@@ -91,11 +96,11 @@ html {
 }
 .contenedor .contenedor__card .card__contenido .card__principal p {
   text-align: center;
-  font-weight: 400;
-  font-size: 0.67rem;
+  font-size: 1.1rem;
   line-height: 1.8;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   font-family: var(--fuente_parrafos);
   color: var(--Slightly_transparent_white_main_paragraph);
 }
@@ -108,31 +113,27 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 .contenedor .contenedor__card .card__contenido .card__secundaria .cajas h2 {
-  font-size: 1.1rem;
+  font-size: 2.1rem;
+  font-weight: 700;
   text-align: center;
   font-family: var(--fuente_titulos);
   color: var(--White_main_heading_stats);
-  margin: 0;
 }
 .contenedor .contenedor__card .card__contenido .card__secundaria .cajas p {
   text-align: center;
-  font-size: 0.6rem;
-  margin-top: 10px;
+  font-size: 1rem;
+  margin-top: 6px;
+  margin-bottom: 15px;
   font-family: var(--fuente_parrafos);
   color: var(--Slightly_transparent_white_stat_headings);
 }
 .contenedor .contenedor__card .card__img {
   width: inherit;
   height: 200px;
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
   border-radius: 12px 12px 0 0;
   background: url(../components/images/image-header-desktop.jpg);
   background-repeat: no-repeat;
@@ -147,7 +148,7 @@ html {
 
 .attribution {
   /*autor y reto enlace*/
-  font-size: 0.5rem;
+  font-size: 1.5rem;
   text-align: center;
   font-weight: 400;
   margin-top: 1rem;
@@ -159,7 +160,7 @@ html {
   text-decoration: none;
   -webkit-text-decoration-style: none;
           text-decoration-style: none;
-  font-size: 0.6rem;
+  font-size: 1.5rem;
   font-weight: 400;
   font-family: var(--fuente_parrafos);
 }

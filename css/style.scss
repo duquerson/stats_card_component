@@ -23,17 +23,18 @@
         border-radius: 12px;
         /*repocionamiento de los elementos*/
         display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
+        flex-direction: column-reverse;
         background-color: var(--Dark_desaturated_blue_card_background);
         .card__contenido {
-            order: 2;
+            margin-top: 26px;
             .card__principal {
                 /*textos, color y fuente*/
                 h1 {
-                    font-size: 1.3rem;
+                    font-size: 2.1rem;
                     font-weight: 700;
                     text-align: center;
+                    margin-left: 12px;
+                    margin-right: 12px;
                     font-family: var(--fuente_titulos);
                     color: var(--White_main_heading_stats);
                     span {
@@ -42,11 +43,11 @@
                 }
                 p {
                     text-align: center;
-                    font-weight: 400;
-                    font-size: 0.67rem;
+                    font-size: 1.1rem;
                     line-height: 1.8;
-                    margin-left: 10px;
-                    margin-right: 10px;
+                    margin-top: 15px;
+                    padding-left: 20px;
+                    padding-right: 20px;
                     font-family: var(--fuente_parrafos);
                     color: var(--Slightly_transparent_white_main_paragraph);
                 }
@@ -55,20 +56,21 @@
                 /*textos, fuente y color*/
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
-                margin-top: 10px;
+                margin-top: 20px;
+                margin-bottom: 10px;
                 .cajas {
                     h2 {
-                        font-size: 1.1rem;
+                        font-size: 2.1rem;
+                        font-weight: 700;
                         text-align: center;
                         font-family: var(--fuente_titulos);
                         color: var(--White_main_heading_stats);
-                        margin: 0;
                     }
                     p {
                         text-align: center;
-                        font-size: 0.6rem;
-                        margin-top: 10px;
+                        font-size: 1rem;
+                        margin-top: 6px;
+                        margin-bottom: 15px;
                         font-family: var(--fuente_parrafos);
                         color: var(--Slightly_transparent_white_stat_headings);
                     }
@@ -78,7 +80,6 @@
         .card__img {
             width: inherit;
             height: 200px;
-            order: 1;
             border-radius: 12px 12px 0 0;
             background: url(../components/images/image-header-desktop.jpg);
             background-repeat: no-repeat;
@@ -95,7 +96,7 @@
 
 .attribution {
     /*autor y reto enlace*/
-    font-size: 0.5rem;
+    font-size: 1.5rem;
     text-align: center;
     font-weight: 400;
     margin-top: 1rem;
@@ -105,7 +106,7 @@
         color: hsl(228, 45%, 44%);
         text-decoration: none;
         text-decoration-style: none;
-        font-size: 0.6rem;
+        font-size: 1.5rem;
         font-weight: 400;
         font-family: var(--fuente_parrafos);
     }
