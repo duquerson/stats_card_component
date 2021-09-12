@@ -1,0 +1,51 @@
+.contenedor__card {
+    width: 696px;
+    height: 278px;
+    border-radius: 12px;
+    /*repocionamiento de los elementos*/
+    display: flex;
+    flex-direction: row;
+    overflow: visible;
+    .card__contenido {
+        margin-top: 47px;
+        .card__principal {
+            /*textos, color y fuente*/
+            h1 {
+                font-size: 2.2rem;
+                text-align: justify;
+                margin-left: 46px;
+                margin-right: 75px;
+            }
+            p {
+                text-align: justify;
+                line-height: 1.7;
+                margin-top: 21px;
+                padding-left: 46px;
+                padding-right: 51px;
+            }
+        }
+        .card__secundaria {
+            /*textos, fuente y color*/
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 50px;
+            .cajas {
+                p {
+                    text-align: justify;
+                }
+            }
+        }
+    }
+    .card__img {
+        width: inherit;
+        height: 338px;
+        border-radius: 0px 12px 12px 0;
+        background: url(../components/images/image-header-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        .img__color {
+            border-radius: 0px 12px 12px 0;
+        }
+    }
+}

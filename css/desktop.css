@@ -1,0 +1,61 @@
+.contenedor__card {
+  width: 696px;
+  height: 278px;
+  border-radius: 12px;
+  /*repocionamiento de los elementos*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  overflow: visible;
+}
+.contenedor__card .card__contenido {
+  margin-top: 47px;
+}
+.contenedor__card .card__contenido .card__principal {
+  /*textos, color y fuente*/
+}
+.contenedor__card .card__contenido .card__principal h1 {
+  font-size: 2.2rem;
+  text-align: justify;
+  margin-left: 46px;
+  margin-right: 75px;
+}
+.contenedor__card .card__contenido .card__principal p {
+  text-align: justify;
+  line-height: 1.7;
+  margin-top: 21px;
+  padding-left: 46px;
+  padding-right: 51px;
+}
+.contenedor__card .card__contenido .card__secundaria {
+  /*textos, fuente y color*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
+}
+.contenedor__card .card__contenido .card__secundaria .cajas p {
+  text-align: justify;
+}
+.contenedor__card .card__img {
+  width: inherit;
+  height: 338px;
+  border-radius: 0px 12px 12px 0;
+  background: url(../components/images/image-header-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.contenedor__card .card__img .img__color {
+  border-radius: 0px 12px 12px 0;
+}
