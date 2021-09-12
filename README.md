@@ -66,4 +66,3 @@ I love using the concept of reusing parts of the code to create another card but
 <p align="left"> 
 <a href="https://linkedin.com/in/duquerson" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="www.linkedin.com/in/duquerson" height="40" width="50" /></a>
 </p>
-
