@@ -22,6 +22,9 @@
 html {
   /*ajuste para uso del rem 1 rem = 10px para tamaño de fuente*/
   font-size: 62.5%;
+}
+
+body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
@@ -46,25 +49,20 @@ p {
   /*tamaño y color de fondo y pocicionamiento de card*/
   width: 100%;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -ms-grid;
+  display: grid;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  justify-items: center;
   background-color: var(--Very_dark_blue_main_background);
   /*card_edition_style*/
 }
 .contenedor .contenedor__card {
-  width: 242px;
-  height: 600px;
+  width: 243px;
+  height: 594px;
   border-radius: 12px;
   /*repocionamiento de los elementos*/
   display: -webkit-box;
@@ -75,19 +73,20 @@ p {
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
   background-color: var(--Dark_desaturated_blue_card_background);
+  overflow: visible;
 }
 .contenedor .contenedor__card .card__contenido {
-  margin-top: 26px;
+  margin-top: 31px;
 }
 .contenedor .contenedor__card .card__contenido .card__principal {
   /*textos, color y fuente*/
 }
 .contenedor .contenedor__card .card__contenido .card__principal h1 {
-  font-size: 2.1rem;
+  font-size: 2rem;
   font-weight: 700;
   text-align: center;
-  margin-left: 12px;
-  margin-right: 12px;
+  margin-left: 28px;
+  margin-right: 28px;
   font-family: var(--fuente_titulos);
   color: var(--White_main_heading_stats);
 }
@@ -96,11 +95,11 @@ p {
 }
 .contenedor .contenedor__card .card__contenido .card__principal p {
   text-align: center;
-  font-size: 1.1rem;
-  line-height: 1.8;
-  margin-top: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
+  font-size: 1rem;
+  line-height: 1.9;
+  margin-top: 21px;
+  padding-left: 26px;
+  padding-right: 26px;
   font-family: var(--fuente_parrafos);
   color: var(--Slightly_transparent_white_main_paragraph);
 }
@@ -113,11 +112,10 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 34px;
 }
 .contenedor .contenedor__card .card__contenido .card__secundaria .cajas h2 {
-  font-size: 2.1rem;
+  font-size: 1.6rem;
   font-weight: 700;
   text-align: center;
   font-family: var(--fuente_titulos);
@@ -125,17 +123,17 @@ p {
 }
 .contenedor .contenedor__card .card__contenido .card__secundaria .cajas p {
   text-align: center;
-  font-size: 1rem;
-  margin-top: 6px;
-  margin-bottom: 15px;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  margin-bottom: 27px;
   font-family: var(--fuente_parrafos);
   color: var(--Slightly_transparent_white_stat_headings);
 }
 .contenedor .contenedor__card .card__img {
   width: inherit;
-  height: 200px;
+  height: 178px;
   border-radius: 12px 12px 0 0;
-  background: url(../components/images/image-header-desktop.jpg);
+  background: url(../components/images/image-header-mobile.jpg);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -143,7 +141,7 @@ p {
   background-color: rgba(94, 0, 153, 0.585);
   border-radius: 12px 12px 0 0;
   width: inherit;
-  height: 200px;
+  height: inherit;
 }
 
 .attribution {
