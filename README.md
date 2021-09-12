@@ -28,12 +28,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./components/design/desktop-preview.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution: [here](https://github.com/duquerson/stats_card_component)
+- Live Site: [here](https://duquerson.github.io/stats_card_component/)
 
 ## My process
 
@@ -59,8 +59,11 @@ I love using the concept of reusing parts of the code to create another card but
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- GitHub - [Duquerson](https://github.com/duquerson)
+- Frontend Mentor - [Duquerson](https://www.frontendmentor.io/profile/yeyosoto)
 
+# Connect with me:
+<p align="left"> 
+<a href="https://linkedin.com/in/duquerson" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="www.linkedin.com/in/duquerson" height="40" width="50" /></a>
+</p>
 
