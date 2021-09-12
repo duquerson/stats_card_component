@@ -11,18 +11,17 @@
     /*tamaño y color de fondo y pocicionamiento de card*/
     width: 100%;
     height: 100vh;
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    // display: flex;
-    // align-items: center;
+    // display: grid;
     // justify-content: center;
-    // flex-direction: column;
-    background-color: var(--Very_dark_blue_main_background);
+    // align-content: center;
+    // justify-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     /*card_edition_style*/
     .contenedor__card {
-        width: 243px;
+        width: 240px;
         height: 594px;
         border-radius: 12px;
         /*repocionamiento de los elementos*/
@@ -33,8 +32,8 @@
         .card__contenido {
             margin-top: 31px;
             .card__principal {
-                /*textos, color y fuente*/
                 h1 {
+                    /*textos, color y fuente*/
                     font-size: 2rem;
                     font-weight: 700;
                     text-align: center;
@@ -83,7 +82,7 @@
         }
         .card__img {
             width: inherit;
-            height: 178px;
+            height: 176px;
             border-radius: 12px 12px 0 0;
             background: url(../components/images/image-header-mobile.jpg);
             background-repeat: no-repeat;
@@ -107,7 +106,7 @@
     font-family: var(--fuente_parrafos);
     color: var(--White_main_heading_stats);
     a {
-        color: hsl(228, 45%, 44%);
+        color: var(--Soft_violet_accent);
         text-decoration: none;
         text-decoration-style: none;
         font-size: 1.5rem;

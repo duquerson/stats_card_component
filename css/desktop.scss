@@ -1,51 +1,64 @@
-.contenedor__card {
-    width: 696px;
-    height: 278px;
-    border-radius: 12px;
-    /*repocionamiento de los elementos*/
-    display: flex;
-    flex-direction: row;
-    overflow: visible;
-    .card__contenido {
-        margin-top: 47px;
-        .card__principal {
-            /*textos, color y fuente*/
-            h1 {
-                font-size: 2.2rem;
-                text-align: justify;
-                margin-left: 46px;
-                margin-right: 75px;
-            }
-            p {
-                text-align: justify;
-                line-height: 1.7;
-                margin-top: 21px;
-                padding-left: 46px;
-                padding-right: 51px;
-            }
-        }
-        .card__secundaria {
-            /*textos, fuente y color*/
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            margin-top: 50px;
-            .cajas {
-                p {
+.contenedor {
+    flex-direction: grid;
+    justify-content: center;
+    align-content: center;
+    .contenedor__card {
+        width: 694px;
+        height: 280px;
+        border-radius: 12px;
+        /*repocionamiento de los elementos*/
+        display: flex;
+        flex-direction: row;
+        .card__contenido {
+            margin-top: 46px;
+            .card__principal {
+                h1 {
+                    font-size: 2.2rem;
                     text-align: justify;
+                    margin-left: 46px;
+                    margin-right: 75px;
+                }
+                p {
+                    font-size: 1rem;
+                    text-align: left;
+                    line-height: 1.7;
+                    margin-top: 18px;
+                    padding-left: 46px;
+                    padding-right: 51px;
+                }
+            }
+            .card__secundaria {
+                /*textos, fuente y color*/
+                display: flex;
+                flex-direction: row;
+                margin-top: 50px;
+                .cajas {
+                    margin-left: 44px;
+                    h2 {
+                        font-size: 1.3rem;
+                        text-align: justify;
+                        font-weight: 700;
+                    }
+                    p {
+                        text-align: justify;
+                        margin-top: 8px;
+                        margin-bottom: 43px;
+                    }
                 }
             }
         }
-    }
-    .card__img {
-        width: inherit;
-        height: 338px;
-        border-radius: 0px 12px 12px 0;
-        background: url(../components/images/image-header-desktop.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        .img__color {
+        .card__img {
+            height: inherit;
+            width: 338px;
             border-radius: 0px 12px 12px 0;
+            background: url(../components/images/image-header-desktop.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            .img__color {
+                height: inherit;
+                width: inherit;
+                border-radius: 0px 12px 12px 0;
+            }
         }
     }
 }

@@ -29,6 +29,7 @@ body {
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-color: var(--Very_dark_blue_main_background);
 }
 
 h1,
@@ -49,19 +50,23 @@ p {
   /*tamaño y color de fondo y pocicionamiento de card*/
   width: 100%;
   height: 100vh;
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  justify-items: center;
-  background-color: var(--Very_dark_blue_main_background);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   /*card_edition_style*/
 }
 .contenedor .contenedor__card {
-  width: 243px;
+  width: 240px;
   height: 594px;
   border-radius: 12px;
   /*repocionamiento de los elementos*/
@@ -78,10 +83,8 @@ p {
 .contenedor .contenedor__card .card__contenido {
   margin-top: 31px;
 }
-.contenedor .contenedor__card .card__contenido .card__principal {
-  /*textos, color y fuente*/
-}
 .contenedor .contenedor__card .card__contenido .card__principal h1 {
+  /*textos, color y fuente*/
   font-size: 2rem;
   font-weight: 700;
   text-align: center;
@@ -131,7 +134,7 @@ p {
 }
 .contenedor .contenedor__card .card__img {
   width: inherit;
-  height: 178px;
+  height: 176px;
   border-radius: 12px 12px 0 0;
   background: url(../components/images/image-header-mobile.jpg);
   background-repeat: no-repeat;
@@ -154,7 +157,7 @@ p {
   color: var(--White_main_heading_stats);
 }
 .attribution a {
-  color: #3e52a3;
+  color: var(--Soft_violet_accent);
   text-decoration: none;
   -webkit-text-decoration-style: none;
           text-decoration-style: none;
