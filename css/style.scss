@@ -9,36 +9,40 @@
 @use './general.scss';
 .contenedor {
     /*tamaño y color de fondo y pocicionamiento de card*/
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     // display: grid;
     // justify-content: center;
     // align-content: center;
     // justify-items: center;
+    //10px = 1rem
     display: flex;
     align-items: center;
     justify-content: center;
+    align-content: center;
     flex-direction: column;
     /*card_edition_style*/
     .contenedor__card {
-        width: 240px;
-        height: 594px;
-        border-radius: 12px;
+        //width: 240px;
+        width: 24rem;
+        //height: 594px;
+        height: 59.4rem;
+        border-radius: 1.2rem;
         /*repocionamiento de los elementos*/
         display: flex;
         flex-direction: column-reverse;
         background-color: var(--Dark_desaturated_blue_card_background);
         overflow: visible;
         .card__contenido {
-            margin-top: 31px;
+            margin-top: 3.1rem;
             .card__principal {
                 h1 {
                     /*textos, color y fuente*/
                     font-size: 2rem;
                     font-weight: 700;
                     text-align: center;
-                    margin-left: 28px;
-                    margin-right: 28px;
+                    margin-left: 2.8rem;
+                    margin-right: 2.8rem;
                     font-family: var(--fuente_titulos);
                     color: var(--White_main_heading_stats);
                     span {
@@ -49,9 +53,9 @@
                     text-align: center;
                     font-size: 1rem;
                     line-height: 1.9;
-                    margin-top: 21px;
-                    padding-left: 26px;
-                    padding-right: 26px;
+                    margin-top: 2.1rem;
+                    padding-left: 2.6rem;
+                    padding-right: 2.6rem;
                     font-family: var(--fuente_parrafos);
                     color: var(--Slightly_transparent_white_main_paragraph);
                 }
@@ -60,7 +64,7 @@
                 /*textos, fuente y color*/
                 display: flex;
                 flex-direction: column;
-                margin-top: 34px;
+                margin-top: 3.4rem;
                 .cajas {
                     h2 {
                         font-size: 1.6rem;
@@ -72,8 +76,8 @@
                     p {
                         text-align: center;
                         font-size: 0.9rem;
-                        margin-top: 10px;
-                        margin-bottom: 27px;
+                        margin-top: 1rem;
+                        margin-bottom: 2.7rem;
                         font-family: var(--fuente_parrafos);
                         color: var(--Slightly_transparent_white_stat_headings);
                     }
@@ -82,14 +86,14 @@
         }
         .card__img {
             width: inherit;
-            height: 176px;
-            border-radius: 12px 12px 0 0;
+            height: 17.6rem;
+            border-radius: 1.2rem 1.2rem 0 0;
             background: url(../components/images/image-header-mobile.jpg);
             background-repeat: no-repeat;
             background-size: contain;
             .img__color {
                 background-color: hsla(277, 100%, 30%, 0.585);
-                border-radius: 12px 12px 0 0;
+                border-radius: 1.2rem 1.2rem 0 0;
                 width: inherit;
                 height: inherit;
             }
@@ -98,13 +102,15 @@
 }
 
 .attribution {
-    /*autor y reto enlace*/
-    font-size: 1.5rem;
-    text-align: center;
-    font-weight: 400;
-    margin-top: 1rem;
-    font-family: var(--fuente_parrafos);
-    color: var(--White_main_heading_stats);
+    h3 {
+        /*autor y reto enlace*/
+        font-size: 1.5rem;
+        text-align: center;
+        font-weight: 400;
+        margin-top: 1rem;
+        font-family: var(--fuente_parrafos);
+        color: var(--White_main_heading_stats);
+    }
     a {
         color: var(--Soft_violet_accent);
         text-decoration: none;
